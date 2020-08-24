@@ -3,9 +3,9 @@ Social GAN is from https://github.com/agrimgupta92/sgan.
 
 I just made several modifications for our research project where there is a multiagent-attacker-defender-battle environment.
 
-Inside the Social GAN data process, I extract the demand positions as environment parameters with defenders and attackers being agents. So the Pooling Module is modified to deal with demands positions purely.
+Inside the Social GAN data preparation, I extracted the demand positions as environment parameters with defenders and attackers being agents. So the Pooling Module is modified to deal with demands positions purely.
 
-I modified the Decoder part of the Generator. The upper one is the original one where it generates the next relative position based on the one right before; the bottom one is what I change the model inspired by the forecasting of stock trend.
+I modified the Decoder part of the Generator. The upper one is the original one where it generates the next relative position based on the one right before; the bottom one is what I change the model inspired by the forecasting of stock trend. This method improved the nonlinear ADE and FDE after training.
 
 <div align='center'>
 <img src="images/original.png"></img>
